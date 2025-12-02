@@ -12,7 +12,7 @@ my_kernels = load(
     name="my_flash_attn_lib",
     sources=[
         "src/interface.cpp",
-        "src/kernels/1_fa_baseline.cuh",
+        "src/kernels/1_fa_baseline.cu",
     ],
     extra_cuda_cflags=["-O3", "--use_fast_math"],
     verbose=False
@@ -22,7 +22,7 @@ print("Compilation finished!\n")
 # -----------------------------------------------------------------------------
 # 2. 准备数据
 # -----------------------------------------------------------------------------
-BATCH, SEQ_LEN, NUM_HEADS, HEAD_DIM = 2, 128, 4, 64
+BATCH, SEQ_LEN, NUM_HEADS, HEAD_DIM = 4, 4096, 4, 64
 DTYPE = torch.bfloat16
 DEVICE = "cuda"
 
