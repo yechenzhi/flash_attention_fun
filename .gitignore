@@ -1,0 +1,19 @@
+# python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C++ / CUDA build artifacts
+*.o
+*.so
+*.pyd
+build/
+dist/
+*.egg-info/
+
+# IDE settings (可选)
+.vscode/
+.idea/
+
+# macOS (可选)
+.DS_Store

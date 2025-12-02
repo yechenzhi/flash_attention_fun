@@ -1,0 +1,4 @@
+torch>=2.0.0
+flash-attn>=2.0.0
+ninja
+packaging
