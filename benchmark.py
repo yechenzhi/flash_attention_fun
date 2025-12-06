@@ -22,7 +22,7 @@ print("Compilation finished!\n")
 # -----------------------------------------------------------------------------
 # 2. 准备数据
 # -----------------------------------------------------------------------------
-BATCH, SEQ_LEN, NUM_HEADS, HEAD_DIM = 4, 4096, 4, 64
+BATCH, SEQ_LEN, NUM_HEADS, HEAD_DIM = 4, 4096, 4, 128
 DTYPE = torch.bfloat16
 DEVICE = "cuda"
 
